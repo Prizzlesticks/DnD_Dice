@@ -59,7 +59,7 @@ public class DiceRoller2 {
 			
 			int go =scan.nextInt();
 			
-			if (go > 2) {
+			while (go > 2 || go < 1) {
 				System.out.println("Please enter 1 or 2");
 				go = scan.nextInt();
 			}
@@ -75,9 +75,6 @@ public class DiceRoller2 {
 		scan.close();
 	}
 	
-	
-	
-
 	public static int roll(int sides) {
 		
 		// enter input into randomizer
